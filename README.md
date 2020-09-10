@@ -1,5 +1,6 @@
 binary calculator team 5!
 
+Run in IntelliJ with Gradle 
 ## Task Distribution
 
 Christopher Staszewski-
