@@ -4,18 +4,15 @@ import javafx.application.Application;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
-import javafx.scene.layout.HBox;
-import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
-import javax.swing.*;
-
 
 public class View extends Application {
+
+    String operator = "", firstNumber;
 
     TextField field = new TextField();
 
@@ -51,6 +48,7 @@ public class View extends Application {
         pane.add(buttonSquare,1,4);
         pane.add(buttonEquals,1,5);
         pane.add(buttonToggle,0,5);
+        field.setEditable(false);
         field.toBack();
 
         attachCode();
@@ -63,6 +61,62 @@ public class View extends Application {
     {
         button0.setOnAction(e -> field.appendText("0"));
         button1.setOnAction(e -> field.appendText("1"));
+        buttonDivide.setOnAction(e -> {
+            if (!field.getText().equals("")) {
+                operator = "/";
+                firstNumber = field.getText();
+                field.setText("");
+            }
+        });
+        buttonMultiply.setOnAction(e -> {
+            if (!field.getText().equals("")) {
+                operator = "*";
+                firstNumber = field.getText();
+                field.setText("");
+            }
+        });
+        buttonAdd.setOnAction(e -> {
+            if (!field.getText().equals("")) {
+                operator = "+";
+                firstNumber = field.getText();
+                field.setText("");
+            }
+        });
+        buttonSubtract.setOnAction(e -> {
+            if (!field.getText().equals("")) {
+                operator = "-";
+                firstNumber = field.getText();
+                field.setText("");
+            }
+        });
+        buttonRoot.setOnAction(e -> {
+
+        });
+        buttonSquare.setOnAction(e -> {
+
+        });
+        buttonEquals.setOnAction(e -> {
+
+        });
+        buttonToggle.setOnAction(e -> {
+
+        });
+        buttonEquals.setOnAction(e -> {
+            if (!field.getText().equals("")) {
+                switch (operator) {
+                    case "/":
+                        field.setText(Operations.Bdivide(firstNumber, field.getText()));
+                        break;
+                    case ("*"):
+                        field.setText(Operations.Bmultiply(firstNumber, field.getText()));
+                        break;
+                    case "+":
+                        field.setText(Operations.Badd(firstNumber, field.getText()));
+                        break;
+                }
+            }
+        });
+
     }
 
     public static void main(String[] args) {

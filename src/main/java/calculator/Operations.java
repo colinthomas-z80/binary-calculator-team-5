@@ -1,7 +1,7 @@
 package calculator;
 
 
-public class operations {
+public class Operations {
     public static String Bdivide(String quotient, String dividend) {
         int q = Integer.parseInt(quotient, 2);
         int d = Integer.parseInt(dividend, 2);
