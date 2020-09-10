@@ -1,4 +1,4 @@
-package java;
+package calculator;
 
 
 public class operations {
@@ -19,5 +19,15 @@ public class operations {
     public static String Broot(String number) {
         int num = Integer.parseInt(number, 2);
         return Integer.toString((int) Math.sqrt(num), 2);
+    }
+    public static String Bmultiply(String num1, String num2) {
+        int n1 = Integer.parseInt(num1, 2);
+        int n2 = Integer.parseInt(num2, 2);
+        return Integer.toString(n1*n2, 2);
+    }
+    public static String Badd(String num1, String num2) {
+        int n1 = Integer.parseInt(num1, 2);
+        int n2 = Integer.parseInt(num2, 2);
+        return Integer.toString(n1+n2, 2);
     }
 }
