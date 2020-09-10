@@ -52,4 +52,14 @@ public class operationsTest {
     public void testBaddFalse() {
         Assert.assertNotEquals("1111", operations.Badd("1111", "101"));
     }
+
+    //Additional Tests for division method
+    @Test
+    public void testBdivisonRemainderLow() {
+        Assert.assertEquals("10100", operations.Bdivide("1100101", "101"));
+    }
+    @Test
+    public void testBdivisonRemainderHigh() {
+        Assert.assertEquals("10100", operations.Bdivide("1101000", "101"));
+    }
 }
