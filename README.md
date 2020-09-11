@@ -13,12 +13,12 @@ This project builds in IntelliJ along with gradle.
 
 ## Task Distribution
 
-Christopher Staszewski-
+[Christopher Staszewski]= []
 
-Colin Thomas- Made the graphical calculator with javafx. Set up repository and intellij/gradle project. Wrote directions in README
+[Colin Thomas] = [Made the graphical calculator with javafx. Set up repository and intellij/gradle project. Wrote directions in README]
 
-Jacob Goelz- Made the initial multiplication class for the assignment. Updated the ReadMe so the other members can add what they did.
+[Jacob Goelz] = [Made the initial multiplication class for the assignment. Updated the README so the other members can add what they did. Updated the README to look like what was specified in the non-functional requirements of the assignment.]
 
-Julian-
+[Julian] = []
 
-Parker Carlson-
+[Parker Carlson] = 
