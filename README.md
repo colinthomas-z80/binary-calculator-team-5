@@ -1,10 +1,15 @@
 This project builds in IntelliJ along with gradle. 
-1. Clone the Repository in IntelliJ
-2. Import the gradle project with the message provided![import](images/import.png)
-3. Click on the Gradle tab on the far right
+-  Clone the Repository in IntelliJ
+-  Import the gradle project with the message provided.
 
-     ![tab](images/arrow.png)
-4. Click through the structure pictured, and double-click run! ![run](images/run.png)
+![import](images/import.png)
+
+- Click on the Gradle tab on the far right
+
+![tab](images/arrow.png)
+-  Click through the structure pictured, and double-click run!
+
+![run](images/run.png)
 
 ## Task Distribution
 
