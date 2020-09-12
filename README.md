@@ -19,6 +19,6 @@ This project builds in IntelliJ along with gradle.
 
 [Jacob Goelz] = [Made the initial multiplication class for the assignment. Updated the README so the other members can add what they did. Updated the README to look like what was specified in the non-functional requirements of the assignment.]
 
-[Julian] = []
+[Julian] = [Integrated Divide, Multiply, Add, and Subtract from the Operations class created by Staszewski.]
 
 [Parker Carlson] = 
