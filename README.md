@@ -11,6 +11,9 @@ This project builds in IntelliJ along with gradle.
 
 ![run](images/run.png)
 
+## Meetings
+September 11, 2020 [7:40pm-8:44pm]- People in meeting: Julian, Colin Thomas, and Jacob Goelz. Christopher Staszewski was unable to attend and Parker Carlson has not responded to any message sent to him in Slack or Canvas. Disscused what needed finished and what we might add to the calculator. 
+
 ## Task Distribution
 
 [Christopher Staszewski]= []
