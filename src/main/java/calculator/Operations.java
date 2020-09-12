@@ -30,4 +30,14 @@ public class Operations {
         int n2 = Integer.parseInt(num2, 2);
         return Integer.toString(n1+n2, 2);
     }
+    public static String Convert(String number, Boolean isBinary) {
+        if(isBinary) {
+            int n1 = Integer.parseInt(number,2);
+            return Integer.toString(n1,10);
+        }
+        else {
+            int n1 = Integer.parseInt(number, 10);
+            return Integer.toString(n1,2);
+        }
+    }
 }
