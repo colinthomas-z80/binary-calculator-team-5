@@ -26,6 +26,9 @@ public class View extends Application {
     Button buttonSquare = new Button("^2");
     Button buttonEquals = new Button("=");
     Button buttonToggle = new Button("bin/dec");
+    Button buttonClear = new Button("CL");
+
+    Boolean isBinary = true;
 
     @Override
     public void start(Stage stage)
@@ -48,6 +51,7 @@ public class View extends Application {
         pane.add(buttonSquare,1,4);
         pane.add(buttonEquals,1,5);
         pane.add(buttonToggle,0,5);
+        pane.add(buttonClear,0,6);
         field.setEditable(false);
         field.toBack();
 
@@ -90,16 +94,30 @@ public class View extends Application {
             }
         });
         buttonRoot.setOnAction(e -> {
-
+            if (!field.getText().equals("")) {
+                operator = "sqrt";
+                firstNumber = field.getText();
+                field.setText(Operations.Broot(firstNumber));
+            }
         });
         buttonSquare.setOnAction(e -> {
-
-        });
-        buttonEquals.setOnAction(e -> {
-
+            if (!field.getText().equals("")) {
+                operator = "^2";
+                firstNumber = field.getText();
+                field.setText(Operations.Bsquare(firstNumber));
+            }
         });
         buttonToggle.setOnAction(e -> {
-
+            if (!field.getText().equals("")) {
+                operator = "convert";
+                firstNumber = field.getText();
+                field.setText(Operations.Convert(firstNumber,isBinary));
+                isBinary = !isBinary;
+            }
+        });
+        buttonClear.setOnAction(e -> {
+            field.setText("");
+            firstNumber = "";
         });
         buttonEquals.setOnAction(e -> {
             if (!field.getText().equals("")) {
@@ -113,10 +131,12 @@ public class View extends Application {
                     case "+":
                         field.setText(Operations.Badd(firstNumber, field.getText()));
                         break;
+                    case "-":
+                        field.setText(Operations.Bsubtract(firstNumber,field.getText()));
+                        break;
                 }
             }
         });
-
     }
 
     public static void main(String[] args) {
