@@ -16,7 +16,7 @@ September 11, 2020 [7:40pm-8:44pm]- People in meeting: Julian, Colin Thomas, and
 
 ## Task Distribution
 
-[Christopher Staszewski]= []
+[Christopher Staszewski]= [Made operation functions and operation unit tests]
 
 [Colin Thomas] = [Made the graphical calculator with javafx. Set up repository and intellij/gradle project. Wrote directions in README]
 
